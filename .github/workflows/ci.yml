@@ -25,7 +25,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+         # pip install -r requirements.txt
+          pip install -r requirements-missing.txt
 
       # TODO 1: Add a step that runs the existing verification with pytest.
       - name: Verify application

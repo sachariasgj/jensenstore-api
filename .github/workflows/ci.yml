@@ -28,6 +28,8 @@ jobs:
           pip install -r requirements.txt
 
       # TODO 1: Add a step that runs the existing verification with pytest.
+      - name: Verify application
+        run: python -m pytest -q 
 
       # TODO 2: Add a step that builds the Docker image.
 
